@@ -27,8 +27,8 @@ export const HeroSection = () => {
                   className="pl-10 border-0 focus:ring-0 text-lg"
                 />
               </div>
-              <Button size="lg" className="px-8 bg-gradient-primary hover:bg-primary-hover">
-                Find Jobs
+              <Button size="lg" className="px-8 bg-gradient-primary hover:bg-primary-hover" asChild>
+                <a href="/jobs">Find Jobs</a>
               </Button>
             </div>
           </div>

@@ -106,17 +106,17 @@ const Dashboard = () => {
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-gradient-primary hover:bg-primary-hover">
-                Find New Jobs
+              <Button className="bg-gradient-primary hover:bg-primary-hover" asChild>
+                <a href="/jobs">Find New Jobs</a>
               </Button>
-              <Button variant="outline">
-                Update Profile
+              <Button variant="outline" asChild>
+                <a href="/profile">Update Profile</a>
               </Button>
-              <Button variant="outline">
-                View Applications
+              <Button variant="outline" asChild>
+                <a href="/applications">View Applications</a>
               </Button>
-              <Button variant="outline">
-                Browse Certifications
+              <Button variant="outline" asChild>
+                <a href="/certifications">Browse Certifications</a>
               </Button>
             </div>
           </CardContent>
@@ -128,8 +128,8 @@ const Dashboard = () => {
             <h2 className="text-2xl font-bold text-foreground">
               Recommended Jobs
             </h2>
-            <Button variant="outline">
-              View All Jobs
+            <Button variant="outline" asChild>
+              <a href="/jobs">View All Jobs</a>
             </Button>
           </div>
           

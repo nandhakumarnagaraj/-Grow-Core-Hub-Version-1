@@ -7,13 +7,11 @@ interface MainLayoutProps {
 }
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
-  const [activeItem, setActiveItem] = useState('dashboard');
-
   return (
     <div className="min-h-screen bg-gradient-subtle">
       <Header />
       <div className="flex">
-        <Sidebar activeItem={activeItem} onItemClick={setActiveItem} />
+        <Sidebar />
         <main className="flex-1 p-6">
           {children}
         </main>
